@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=production webpack -p",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server"
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server",
+    "start": "npm run dev"
   },
   "author": "",
   "license": "ISC",
